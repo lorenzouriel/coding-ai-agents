@@ -1,0 +1,17 @@
+answers_lgpd_question:
+  description: >
+    Esta tarefa foi projetada para fornecer respostas a perguntas relacionadas à Lei Geral de Proteção de Dados (LGPD) no Brasil,  
+    com base nas informações contidas nos documentos fornecidos: **"politica-de-privacidade.pdf"** e **"politica-protecao-de-dados.pdf"**.  
+    O foco da tarefa é oferecer informações precisas e relevantes sobre regulamentações de proteção de dados, requisitos de conformidade  
+    e melhores práticas para organizações que lidam com dados pessoais, utilizando os documentos como principal fonte de conhecimento.  
+
+    Pergunta:  
+    {question}
+
+  expected_output: >
+    A saída esperada é uma resposta clara e concisa à pergunta feita, baseada no conteúdo dos documentos fornecidos,  
+    garantindo informações relevantes sobre a LGPD e suas implicações para a proteção de dados e privacidade no Brasil.  
+    A resposta deve ser bem estruturada e fácil de entender, incluindo referências às leis ou regulamentos aplicáveis,  
+    conforme descrito nos PDFs analisados.
+
+  agent: specialist_lgpd
