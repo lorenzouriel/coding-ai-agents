@@ -17,7 +17,7 @@ This FastAPI application allows you to extract financial transaction data from n
 1. Clone this repository:
 ```bash
 git clone https://github.com/lorenzouriel/coding-ai-agents.git
-cd finance-assistant
+cd /no-framework/finance-assistant
 ```
 
 2. Create and activate a virtual environment:
@@ -30,7 +30,11 @@ source .venv/bin/activate      # Linux/macOS
 
 3. Install dependencies:
 ```bash
-pip install fastapi uvicorn python-dotenv sqlmodel openai
+uv add fastapi uvicorn python-dotenv sqlmodel openai
+
+# Or
+
+pip install -r requirements.txt
 ```
 
 4. Create a `.env` file with your Groq API key:
@@ -39,20 +43,16 @@ GROQ_API_KEY=your_groq_api_key_here
 ```
 
 ## Running the app
-
 Start the server with:
-
 ```bash
 uvicorn main:app --reload
 ```
 
 On startup, you should see:
-
 ```
 Banco de dados e tabelas prontos.
 INFO:     Uvicorn running on http://127.0.0.1:8000
 ```
-
 
 ## API Endpoints
 ### 1. POST `/webhook`
@@ -125,20 +125,3 @@ Ask a natural language question about your transactions.
   "answer": "Você gastou R$80.00 em alimentação."
 }
 ```
-
-## Notes
-* The `/webhook` endpoint sends the user message to Groq LLaMA to extract structured JSON data.
-* The app auto-creates the SQLite DB and tables on startup.
-* The `/ask` endpoint currently supports basic category sum queries based on predefined categories.
-* Categories are case-insensitive and must match known categories in the list: `"alimentação"`, `"transporte"`, `"poupança"`, `"outro"`.
-
-## Troubleshooting
-* Ensure your `.env` contains a valid `GROQ_API_KEY`.
-* The AI model might sometimes return unexpected JSON; errors will be returned with details.
-* Make sure your working directory is writable for SQLite DB creation.
-
-## Extending
-* Add better NLP/LLM parsing for `/ask` to understand more complex questions.
-* Add pagination and sorting to transaction list endpoints.
-* Add authentication and rate limiting.
-* Implement update/delete endpoints for transactions.
