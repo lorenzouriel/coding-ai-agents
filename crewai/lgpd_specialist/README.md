@@ -1,39 +1,38 @@
 # Specialist Crew - LGPD Assistant
+This project uses the [CrewAI](https://crewai.io/) library to create an agent specialized in the General Data Protection Law (LGPD). The agent uses language models (LLMs) and PDF documents as knowledge sources to answer questions related to the LGPD.
 
-Este projeto utiliza a biblioteca [CrewAI](https://crewai.io/) para criar um agente especializado na Lei Geral de Proteção de Dados (LGPD). O agente utiliza modelos de linguagem (LLMs) e documentos PDF como fonte de conhecimento para responder perguntas relacionadas à LGPD.
-
-## Tecnologias Utilizadas
+## Technologies Used
 - Python
 - [CrewAI](https://crewai.io/)
-- Modelos de linguagem (`gpt-4o-mini`)
-- Processamento de documentos PDF (`PDFKnowledgeSource`)
+- Language Models (`gpt-4o-mini`)
+- PDF Document Processing (`PDFKnowledgeSource`)
 
-## Instalação e Configuração
+## Installation and Configuration
 
-1. Clone este repositório:
+1. Clone this repository:
 ```sh
 git clone https://github.com/lorenzouriel/crewai-lgpd-specialist.git
 cd crewai-lgpd-specialist
 ```
-2. Crie um ambiente virtual e ative-o:
+2. Create a virtual environment and activate it:
 ```sh
 python -m venv venv
- source venv/bin/activate  # No Windows, use: venv\Scripts\activate
+source venv/bin/activate # On Windows, use: venv\Scripts\activate
 ```
 
-3. Instale as dependências:
+3. Install the dependencies:
 ```sh
 pip install -r requirements.txt
 ```
 
-4. Execute o projeto:
+4. Run the project:
 ```sh
 streamlit run app.py
 ```
 
-> Atualize o `.env` com a `OPENAI_API_KEY`!
+> Update `.env` with the `OPENAI_API_KEY`!
 
-## Como Funciona
-1. O agente `specialist_lgpd` é criado utilizando um modelo de linguagem (`LLM`).
-2. Ele recebe documentos PDF como fonte de conhecimento.
-3. O agente executa a tarefa de responder perguntas com base no conteúdo dos documentos.
+## How It Works
+1. The `specialist_lgpd` agent is created using a language model (`LLM`).
+2. It receives PDF documents as a knowledge source.
+3. The agent performs the task of answering questions based on the content of the documents.

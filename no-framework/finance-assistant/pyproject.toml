@@ -1,0 +1,13 @@
+[project]
+name = "finance-assistant"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.116.1",
+    "openai>=1.95.1",
+    "python-dotenv>=1.1.1",
+    "sqlmodel>=0.0.24",
+    "uvicorn>=0.35.0",
+]
