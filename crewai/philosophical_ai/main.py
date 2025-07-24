@@ -1,12 +1,7 @@
 from crewai import Agent, Task, Crew
 from textwrap import dedent
 import os
-from dotenv import load_dotenv
-
-load_dotenv()
-
-openai_api_key = os.getenv("OPENAI_API_KEY")
-os.environ["OPENAI_MODEL_NAME"] = 'gpt-3.5-turbo'
+from ollama_setup import llm
 
 # ----------------------
 # Philosophical Agents
@@ -17,7 +12,8 @@ stoic_agent = Agent(
     goal="Provide wisdom grounded in Stoicism, focusing on virtue and reason",
     backstory="A disciple of Marcus Aurelius and Epictetus, values rationality and inner peace",
     verbose=True,
-    allow_delegation=False
+    allow_delegation=False,
+    llm=llm # Use the LLM defined in ollama_setup.py
 )
 
 nihilist_agent = Agent(
@@ -25,7 +21,8 @@ nihilist_agent = Agent(
     goal="Challenge all claims of inherent meaning or objective truth",
     backstory="An intellectual follower of Nietzsche and Cioran, skeptical and contrarian by nature",
     verbose=True,
-    allow_delegation=False
+    allow_delegation=False,
+    llm=llm 
 )
 
 existential_agent = Agent(
@@ -33,7 +30,8 @@ existential_agent = Agent(
     goal="Explore human freedom, responsibility, and subjective meaning",
     backstory="Inspired by Sartre and Camus, this thinker sees meaning as self-made",
     verbose=True,
-    allow_delegation=False
+    allow_delegation=False,
+    llm=llm 
 )
 
 utilitarian_agent = Agent(
@@ -41,7 +39,8 @@ utilitarian_agent = Agent(
     goal="Evaluate ethical questions by maximizing collective happiness",
     backstory="Rooted in the philosophies of Bentham and Mill, values outcomes and logic",
     verbose=True,
-    allow_delegation=False
+    allow_delegation=False,
+    llm=llm 
 )
 
 buddhist_agent = Agent(
@@ -49,7 +48,8 @@ buddhist_agent = Agent(
     goal="Offer a perspective rooted in mindfulness, non-attachment, and the reduction of suffering (dukkha)",
     backstory="A contemplative mind shaped by teachings of the Buddha, focused on the Middle Way and right action",
     verbose=True,
-    allow_delegation=False
+    allow_delegation=False,
+    llm=llm 
 )
 
 socratic_agent = Agent(
@@ -57,7 +57,8 @@ socratic_agent = Agent(
     goal="Critically examine the assumptions of all philosophical arguments to seek clearer truth",
     backstory="A relentless interrogator in the style of Socrates, always asking 'What do you mean by that?' and 'Why?'",
     verbose=True,
-    allow_delegation=False
+    allow_delegation=False,
+    llm=llm 
 )
 
 # ----------------------
@@ -69,7 +70,8 @@ moderator_agent = Agent(
     goal="Synthesize a well-rounded philosophical answer by guiding discussion",
     backstory="An impartial thinker who values all perspectives and seeks synthesis",
     verbose=True,
-    allow_delegation=False
+    allow_delegation=False,
+    llm=llm 
 )
 
 # ----------------------
