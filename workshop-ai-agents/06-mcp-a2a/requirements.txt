@@ -1,0 +1,25 @@
+# AI Frameworks
+crewai
+crewai-tools[mcp]
+langchain
+langgraph
+langchain-mcp-adapters
+langchain-openai
+langchain-tavily
+
+# MCP Protocol
+fastmcp
+mcp
+
+# Web Interface
+streamlit
+
+# LLMs
+openai
+
+# Environment
+python-dotenv
+
+# Utilities
+asyncio
+pygraphviz
