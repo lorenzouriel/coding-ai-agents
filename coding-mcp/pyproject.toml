@@ -10,3 +10,8 @@ dependencies = [
     "huggingface-hub[mcp]>=0.32.0",
     "mcp[cli]>=1.13.1",
 ]
+
+[tool.uv.workspace]
+members = [
+    "mcp-yfinance",
+]
