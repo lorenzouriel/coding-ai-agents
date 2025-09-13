@@ -3,7 +3,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 tokenizer = AutoTokenizer.from_pretrained("./my_finetuned_model")
 model = AutoModelForCausalLM.from_pretrained("./my_finetuned_model")
 
-input_text = "Question: What is 4 + 2?\nAnswer:"
+input_text = "Question: What is 2 + 2?\nAnswer:"
 inputs = tokenizer(input_text, return_tensors="pt")
 
 outputs = model.generate(
