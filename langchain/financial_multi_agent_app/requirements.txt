@@ -1,0 +1,8 @@
+python-dotenv
+langgraph==0.3.31
+langchain-core>=0.3.54,<0.4
+langchain-openai
+langchain-community
+requests
+pytest
+openai
