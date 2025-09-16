@@ -48,7 +48,6 @@ llm = ChatOllama(
 CrewSettings.llm = llm
 ```
 
-
 ## 5. Adapte o seu código principal
 No seu `main.py`, **adicione esse import** logo no início:
 ```python
