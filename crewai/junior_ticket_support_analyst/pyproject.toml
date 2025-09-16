@@ -1,0 +1,10 @@
+[project]
+name = "junior-ticket-support-analyst"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "crewai>=0.186.1",
+    "streamlit>=1.49.1",
+]
