@@ -1,0 +1,5 @@
+The moon shines brightly in the night sky.
+Water boils at 100 degrees Celsius.
+Question: What is the capital of France?
+Answer: Paris
+Dogs are loyal animals that often become part of the family.

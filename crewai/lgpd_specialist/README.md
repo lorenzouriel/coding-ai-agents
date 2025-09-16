@@ -11,13 +11,13 @@ This project uses the [CrewAI](https://crewai.io/) library to create an agent sp
 
 1. Clone this repository:
 ```sh
-git clone https://github.com/lorenzouriel/crewai-lgpd-specialist.git
-cd crewai-lgpd-specialist
+git clone https://github.com/lorenzouriel/coding-ai-agents.git
+cd coding-ai-agents\crewai\lgpd_specialist
 ```
 2. Create a virtual environment and activate it:
 ```sh
 python -m venv venv
-source venv/bin/activate # On Windows, use: venv\Scripts\activate
+source venv/bin/activate
 ```
 
 3. Install the dependencies:
