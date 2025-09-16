@@ -1,7 +1,6 @@
 from crewai import Agent, Task, Crew
 from textwrap import dedent
-import os
-from ollama_setup import llm
+from llm import openai_llm
 
 # ----------------------
 # Philosophical Agents
@@ -13,7 +12,7 @@ stoic_agent = Agent(
     backstory="A disciple of Marcus Aurelius and Epictetus, values rationality and inner peace",
     verbose=True,
     allow_delegation=False,
-    llm=llm # Use the LLM defined in ollama_setup.py
+    llm=openai_llm
 )
 
 nihilist_agent = Agent(
@@ -22,7 +21,7 @@ nihilist_agent = Agent(
     backstory="An intellectual follower of Nietzsche and Cioran, skeptical and contrarian by nature",
     verbose=True,
     allow_delegation=False,
-    llm=llm 
+    llm=openai_llm 
 )
 
 existential_agent = Agent(
@@ -31,7 +30,7 @@ existential_agent = Agent(
     backstory="Inspired by Sartre and Camus, this thinker sees meaning as self-made",
     verbose=True,
     allow_delegation=False,
-    llm=llm 
+    llm=openai_llm 
 )
 
 utilitarian_agent = Agent(
@@ -40,7 +39,7 @@ utilitarian_agent = Agent(
     backstory="Rooted in the philosophies of Bentham and Mill, values outcomes and logic",
     verbose=True,
     allow_delegation=False,
-    llm=llm 
+    llm=openai_llm 
 )
 
 buddhist_agent = Agent(
@@ -49,7 +48,7 @@ buddhist_agent = Agent(
     backstory="A contemplative mind shaped by teachings of the Buddha, focused on the Middle Way and right action",
     verbose=True,
     allow_delegation=False,
-    llm=llm 
+    llm=openai_llm 
 )
 
 socratic_agent = Agent(
@@ -58,7 +57,7 @@ socratic_agent = Agent(
     backstory="A relentless interrogator in the style of Socrates, always asking 'What do you mean by that?' and 'Why?'",
     verbose=True,
     allow_delegation=False,
-    llm=llm 
+    llm=openai_llm 
 )
 
 # ----------------------
@@ -71,7 +70,7 @@ moderator_agent = Agent(
     backstory="An impartial thinker who values all perspectives and seeks synthesis",
     verbose=True,
     allow_delegation=False,
-    llm=llm 
+    llm=openai_llm 
 )
 
 # ----------------------
