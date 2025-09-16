@@ -1,0 +1,14 @@
+answer_system_faq:
+  description: >
+    This task is designed to provide answers to user questions and FAQs related to the company's systems, software, and internal tools.  
+    The agent should use available documentation, manuals, and knowledge sources to provide accurate and helpful responses.  
+
+    Question:  
+    {question}
+
+  expected_output: >
+    The expected output is a clear and concise answer to the user’s question, based on the available documentation and knowledge sources.  
+    The response should be easy to understand, actionable, and relevant to the user’s issue or query.  
+    If applicable, include step-by-step instructions, links to relevant guides, or references to internal documentation.
+
+  agent: junior_ticket_support_agent
