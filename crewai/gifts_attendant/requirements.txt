@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+crewai
+pandas
+pydantic
+requests
+logging
+asyncio
+pydantic-settings
