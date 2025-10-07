@@ -1,0 +1,22 @@
+{
+  "bloco-anotacoes": {
+    "base_price": 4.5,
+    "lead_time_days": 5,
+    "min_qty": 50
+  },
+  "caneta-plastica": {
+    "base_price": 1.5,
+    "lead_time_days": 3,
+    "min_qty": 100
+  },
+  "ecobag": {
+    "base_price": 6.0,
+    "lead_time_days": 7,
+    "min_qty": 50
+  },
+  "moleskine": {
+    "base_price": 9.0,
+    "lead_time_days": 7,
+    "min_qty": 20
+  }
+}

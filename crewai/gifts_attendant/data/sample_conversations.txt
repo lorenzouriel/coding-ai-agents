@@ -1,0 +1,4 @@
+
+[13:48] Luminati Brindes: Oii! Eu sou a Carol...
+[13:50] Geosiga: Gostaria de ter acesso ao catálogo de vocês com os valores
+[13:51] ... (use for training examples)
