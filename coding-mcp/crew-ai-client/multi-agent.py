@@ -4,7 +4,6 @@ import os
 
 server_params = {"url": "http://localhost:8080/mcp", "transport": "streamable-http"}
 
-
 with MCPServerAdapter(server_params) as mcp_tools:
     # Schema Explorer Agent
     explorer = Agent(

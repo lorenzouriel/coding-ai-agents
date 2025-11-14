@@ -1,13 +1,11 @@
 from crewai import Agent, Task, Crew
 from crewai_tools import MCPServerAdapter
-import os
 
 # Configure MCP server connection
 server_params = {
     "url": "http://localhost:8080/mcp",
     "transport": "streamable-http"
 }
-
 
 # Connect to MCP server and get tools
 with MCPServerAdapter(server_params, connect_timeout=60) as mcp_tools:

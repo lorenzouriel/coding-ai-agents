@@ -1,7 +1,7 @@
 import requests
 import json
 
-MCP_URL = "http://localhost:8080"
+MCP_URL = "http://localhost:8080/info"
 
 print("Testing MCP Server Connection...\n")
 
